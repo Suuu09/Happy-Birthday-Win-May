@@ -1,0 +1,194 @@
+body{
+	margin: 0px;
+	padding: 0px;
+}
+nav{
+	position: absolute;
+	width: 100%;
+	height: 100px;
+	padding: 15px 90px;
+	box-sizing: border-box;
+}
+nav .navbar{
+	padding: 22px 20px;
+	height: 80px;
+	float: left;
+	font-size: 33px;
+	font-weight: bold;
+	text-transform: uppercase;
+	color: #2E2A2A;
+}
+nav ul{
+	list-style: none;
+	float: right;
+	margin: 0px;
+	padding: 0px;
+	display: flex;
+}
+nav ul li a{
+	line-height: 75px;
+	color: #2E2A2A;
+	padding: 15px 30px;
+	text-decoration: none;
+	font-size: 18px;
+}
+section{
+	width: 100%;
+	height: 110vh;
+	background: url("img/bday2.jpg");
+	background-size: cover;
+	background-position: center;
+}
+.home{
+	display: flex;
+	justify-content: center;
+	padding-top: 70px;
+}
+.home div{
+	width: 40%;
+	margin: 10px;
+}
+h1, #hover{
+	text-align: center;
+}
+.home p{
+	font-size: 18px;
+	line-height: 40px;
+}
+.gallery{
+	padding: 100px;
+	display: flex;
+	justify-content: center;
+}
+.gallery div{
+	width: 20%;
+	margin: 7px;
+}
+.gallery img{
+	height: 200px;
+	border-radius: 25px;
+}
+.gallery img:hover{
+	transform: scale(1.5);
+	transition-duration: 2s;
+	border: 2px solid #fff;
+}
+marquee img{
+	width: 300px;
+	height: 150px;
+	border-radius: 20px;
+}
+
+.image {
+	border-radius: 20px;
+	border: 2px solid #fff;
+  width: 300px;
+  height: 100%;
+}
+.container{
+	position: relative;
+	width: 220px;
+	height: 340px;
+	display: inline-block;
+	/*padding-left: 20px;*/
+}
+.image{
+	display: block;
+	width: 220px;
+	height: 340px;
+}
+.overlay{
+	position: absolute;
+	transition: all .3s ease;
+	opacity: 0;
+	background-color: #F7C5CC;
+}
+.container:hover .overlay{
+	opacity: 0.9;
+}
+.text1{
+	color: #CC313D;
+	font-family: monospace;
+	position: absolute;
+	top: 39%;
+	left: 45%;
+	bottom: 0;
+	transform: translate(-50%, -50%);
+	font-size: 15px;
+}
+.text2{
+	color: #CC313D;
+	font-family: cursive;
+	position: absolute;
+	top: 33%;
+	left: 45%;
+	bottom: 0;
+	transform: translate(-40%, -50%);
+	font-size: 13px;
+}
+.text3{
+	color: #CC313D;
+	font-family: sans-serif;
+	position: absolute;
+	top: 38%;
+	left: 45%;
+	bottom: 0;
+	transform: translate(-50%, -50%);
+	font-size: 15px;
+}
+.text4{
+	color: #CC313D;
+	font-family: monospace;
+	position: absolute;
+	top: 47%;
+	left: 45%;
+	bottom: 0;
+	transform: translate(-50%, -50%);
+	font-size: 15px;
+}
+.overlayLeft{
+	height: 100%;
+	width: 0;
+	top: 0;
+	left: 0;
+}
+.overlayRight{
+	height: 100%;
+	width: 0;
+	top: 0;
+	right: 0;
+}
+.container:hover .overlayLeft, .container:hover .overlayRight{
+	width: 100%;
+}
+.overlayTop{
+	width: 100%;
+	height: 0;
+	top: 0;
+	left: 0;
+}
+.overlayBottom{
+	width: 100%;
+	height: 0;
+	bottom: 0;
+	left: 0;
+}
+.container:hover .overlayTop, .container:hover .overlayBottom{
+	height: 100%;
+}
+.overlayCross{
+	width: 0;
+	height: 0;
+	top: 0;
+	left: 0;
+}
+.container:hover .overlayCross{
+	width: 100%;
+	height: 100%;
+}
+.overlayFade{
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+}
